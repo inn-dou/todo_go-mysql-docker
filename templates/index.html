@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <a href="/new">Add New Todo</a>
+    {{range .}}
+    <p>
+        <input type="checkbox" {{if .Status}}checked{{end}}>
+        {{.Title}}
+    </p>
+    {{end}}
+</body>
+</html>
